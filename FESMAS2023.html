@@ -69,6 +69,29 @@
                 font-size: 14px;
             }
 
+            span.status {
+                position: absolute;
+                /* right: 0;
+                top: 0; */
+                right: -10px;
+                top: -5px;
+                border: 1px solid #ffea00;
+                font-size: 10px;
+                padding: 5px 7px;
+                font-family: monospace;
+            }
+
+            span.open {
+                color: white;
+                background-color: #000000;
+            }
+
+            span.closed {
+                color: white;
+                background-color: #ff0000;
+
+            }
+
             ul {
                 padding: 0;
                 list-style: none;
@@ -92,6 +115,7 @@
 
             a {
                 /* background: #4fd195; */
+                position: relative;
                 padding: 10px 5px;
                 text-decoration: none;
                 font-size: 18px;
@@ -115,10 +139,26 @@
                         <div class="box">
 
                             <ul>
-                                <li><a href="https://forms.gle/uGhXhD1MhAnNF1hN7" class="bg-warningg">Volunteer</a></li>
-                                <li><a href="#" class="bg-warningg">Pidato</a></li>
-                                <li><a href="#" class="bg-warningg">Presenter</a></li>
-                                <li><a href="#" class="bg-warningg">Karya Tulis Ilmiah</a></li>
+                                <li>
+                                    <a href="https://forms.gle/uGhXhD1MhAnNF1hN7" class="bg-warningg">Volunteer
+                                        <span class="status open">Buka</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-warningg">Pidato
+                                        <span class="status closed">Tutup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-warningg">Presenter
+                                        <span class="status closed">Tutup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-warningg">Karya Tulis Ilmiah
+                                        <span class="status closed">Tutup</span>
+                                    </a>
+                                </li>
                             </ul>
 
                         </div>
